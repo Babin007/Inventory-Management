@@ -1,0 +1,16 @@
+/workspaces/Inventory-Management/api/src/ECommerce.Business/bin/Debug/net8.0/ECommerce.Business.deps.json
+/workspaces/Inventory-Management/api/src/ECommerce.Business/bin/Debug/net8.0/ECommerce.Business.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Business/bin/Debug/net8.0/ECommerce.Business.pdb
+/workspaces/Inventory-Management/api/src/ECommerce.Business/bin/Debug/net8.0/ECommerce.Data.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Business/bin/Debug/net8.0/ECommerce.Data.pdb
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.csproj.AssemblyReference.cache
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.AssemblyInfoInputs.cache
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.AssemblyInfo.cs
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.csproj.CoreCompileInputs.cache
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.sourcelink.json
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.csproj.CopyComplete
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/refint/ECommerce.Business.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ECommerce.Business.pdb
+/workspaces/Inventory-Management/api/src/ECommerce.Business/obj/Debug/net8.0/ref/ECommerce.Business.dll

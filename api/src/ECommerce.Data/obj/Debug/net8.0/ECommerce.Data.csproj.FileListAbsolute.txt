@@ -1,0 +1,15 @@
+/workspaces/Inventory-Management/api/src/ECommerce.Data/bin/Debug/net8.0/ECommerce.Data.deps.json
+/workspaces/Inventory-Management/api/src/ECommerce.Data/bin/Debug/net8.0/ECommerce.Data.runtimeconfig.json
+/workspaces/Inventory-Management/api/src/ECommerce.Data/bin/Debug/net8.0/ECommerce.Data.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Data/bin/Debug/net8.0/ECommerce.Data.pdb
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.csproj.AssemblyReference.cache
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.AssemblyInfoInputs.cache
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.AssemblyInfo.cs
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.csproj.CoreCompileInputs.cache
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.sourcelink.json
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/refint/ECommerce.Data.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.pdb
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ECommerce.Data.genruntimeconfig.cache
+/workspaces/Inventory-Management/api/src/ECommerce.Data/obj/Debug/net8.0/ref/ECommerce.Data.dll
