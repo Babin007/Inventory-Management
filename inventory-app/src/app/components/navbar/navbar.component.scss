@@ -1,0 +1,16 @@
+/* navbar custom styles */
+.navbar-brand span {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.navbar .badge {
+  font-size: 0.6rem;
+}
+
+/* make the search box slightly larger on md+ */
+@media (min-width: 768px) {
+  .navbar .form-control {
+    width: 200px;
+  }
+}

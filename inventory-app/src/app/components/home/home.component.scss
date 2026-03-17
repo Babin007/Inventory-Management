@@ -1,0 +1,19 @@
+.home-carousel img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?warehouse,auto') center/cover no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.hero .btn {
+  min-width: 200px;
+  background: #ff5722;
+  border: none;
+}
+.hero .btn:hover {
+  background: #e64a19;
+}
