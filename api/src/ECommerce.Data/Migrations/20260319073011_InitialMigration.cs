@@ -44,16 +44,17 @@ namespace ECommerce.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<int>(type: "int", nullable: false),
                     Stock = table.Column<int>(type: "int", nullable: false),
-                    CategoryEntityId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Products_Categories_CategoryEntityId",
-                        column: x => x.CategoryEntityId,
+                        name: "FK_Products_Categories_CategoryId",
+                        column: x => x.CategoryId,
                         principalTable: "Categories",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -84,7 +85,7 @@ namespace ECommerce.Data.Migrations
                     OrderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ProductId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Price = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -119,9 +120,9 @@ namespace ECommerce.Data.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_CategoryEntityId",
+                name: "IX_Products_CategoryId",
                 table: "Products",
-                column: "CategoryEntityId");
+                column: "CategoryId");
         }
 
         /// <inheritdoc />

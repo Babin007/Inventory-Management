@@ -153,3 +153,5 @@
 /workspaces/Inventory-Management/api/src/ECommerce.Api/obj/Debug/net8.0/ECommerce.Api.pdb
 /workspaces/Inventory-Management/api/src/ECommerce.Api/obj/Debug/net8.0/ECommerce.Api.genruntimeconfig.cache
 /workspaces/Inventory-Management/api/src/ECommerce.Api/obj/Debug/net8.0/ref/ECommerce.Api.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Api/bin/Debug/net8.0/AutoMapper.dll
+/workspaces/Inventory-Management/api/src/ECommerce.Api/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
