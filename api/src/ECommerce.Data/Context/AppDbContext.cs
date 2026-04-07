@@ -6,7 +6,7 @@ namespace ECommerce.Data;
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options)
-        : base(options){ }
+        : base(options) { }
 
     public DbSet<ProductEntity> Products => Set<ProductEntity>();
     public DbSet<CategoryEntity> Categories => Set<CategoryEntity>();

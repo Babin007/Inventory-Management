@@ -11,6 +11,9 @@ namespace ECommerce.Data.Entities
         public string Name { get; set; } = null!;
         public int Price { get; set; }
         public int Stock { get; set; }
+        public Guid CategoryId { get; set; }
+        
+        public CategoryEntity Category { get; set; } = null!;
 
     }
 }
