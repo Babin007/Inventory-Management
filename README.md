@@ -55,6 +55,8 @@
             dotnet add src/ECommerce.Api package Swashbuckle.AspNetCore
             dotnet add src/ECommerce.Api package Microsoft.AspNetCore.Authentication.JwtBearer
             dotnet add src/ECommerce.Api package Microsoft.Data.SqlClient
+            <!-- add automapper -->
+            dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
         📦 Business Layer
             Must be empty
             ✅ Business layer should contain:

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerce.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260317065921_InitialMigration")]
+    [Migration("20260319073011_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -71,8 +71,8 @@ namespace ECommerce.Data.Migrations
                     b.Property<Guid>("OrderId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uniqueidentifier");
@@ -95,7 +95,7 @@ namespace ECommerce.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("CategoryEntityId")
+                    b.Property<Guid>("CategoryId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
@@ -110,7 +110,7 @@ namespace ECommerce.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryEntityId");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -166,9 +166,13 @@ namespace ECommerce.Data.Migrations
 
             modelBuilder.Entity("ECommerce.Data.Entities.ProductEntity", b =>
                 {
-                    b.HasOne("ECommerce.Data.Entities.CategoryEntity", null)
+                    b.HasOne("ECommerce.Data.Entities.CategoryEntity", "Category")
                         .WithMany("Products")
-                        .HasForeignKey("CategoryEntityId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("ECommerce.Data.Entities.CategoryEntity", b =>

@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using ECommerce.Data;
+using ECommerce.Data.Interface;
+using ECommerce.Data.Repositories;
+using ECommerce.Business.Interface;
+using ECommerce.Business.Services;
 
 // ✅ REQUIRED for Azure SQL + AAD in Linux containers (Codespaces)
 AppContext.SetSwitch("System.Globalization.Invariant", false);
@@ -12,9 +16,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("Sql")));
 
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
