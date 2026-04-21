@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
+using ECommerce.Data;
+using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/health")]
 public class HealthController : ControllerBase
 {
-    private readonly IConfiguration _config;
+    private readonly AppDbContext _dbContext;
 
-    public HealthController(IConfiguration config)
+    public HealthController(AppDbContext dbContext)
     {
-        _config = config;
+        _dbContext = dbContext;
     }
 
     [HttpGet("db-ado")]
@@ -17,10 +18,16 @@ public class HealthController : ControllerBase
     {
         try
         {
-            var connectionString = _config.GetConnectionString("Sql");
+            var canConnect = await _dbContext.Database.CanConnectAsync();
 
-            using var conn = new SqlConnection(connectionString);
-            await conn.OpenAsync();
+            if (!canConnect)
+            {
+                return StatusCode(500, new
+                {
+                    databaseConnection = false,
+                    error = "Database connection failed"
+                });
+            }
 
             return Ok(new { databaseConnection = true });
         }

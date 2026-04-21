@@ -6,15 +6,15 @@ using ECommerce.Business.Interface;
 using ECommerce.Business.Services;
 
 // ✅ REQUIRED for Azure SQL + AAD in Linux containers (Codespaces)
-AppContext.SetSwitch("System.Globalization.Invariant", false);
+// AppContext.SetSwitch("System.Globalization.Invariant", false);
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.UseUrls("http://0.0.0.0:5095");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("Sql")));
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("Postgres")));
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
